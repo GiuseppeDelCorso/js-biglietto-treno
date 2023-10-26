@@ -3,8 +3,14 @@ let etaUtente = prompt("Inserisci la tua età");
 let prezzo = kilometri * (0.21)
 
 document.getElementById("prezzo").innerHTML = "il costo del biglietto é, " + prezzo;
-document.getElementById("prezzo").innerHTML = "il costo del biglietto é, " + prezzoScontato;          
+         
+
 
 if (etaUtente < 18){
-    let prezzoScontato = prezzo - 20;
+    let prezzoScontato = prezzo - (20);
+    document.getElementById("prezzo").innerHTML = "il costo del biglietto é, " + prezzoScontato; 
+}
+if (etaUtente > 65){
+    let prezzoScontatoOver = prezzo - (40);
+    document.getElementById("prezzo").innerHTML = "il costo del biglietto é, " + prezzoScontatoOver; 
 }
