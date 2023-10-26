@@ -5,4 +5,4 @@ let prezzo = kilometri * (0.21)
 document.getElementById("prezzo").innerHTML = "il costo del biglietto é, " + prezzo;        
 
 
-let prezzo - (20) 
+if (etaUtente < 18) = prezzo - (20)
