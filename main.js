@@ -7,10 +7,10 @@ document.getElementById("prezzo").innerHTML = "il costo del biglietto é, " + pr
 
 
 if (etaUtente < 18){
-    let prezzoScontato = ((20/prezzo) * 100).toFixed(0) - prezzo;
+    let prezzoScontato = prezzo - (prezzo *0,2);
     document.getElementById("prezzo").innerHTML = "il costo del biglietto é, " + prezzoScontato; 
 }
 if (etaUtente > 65){
-    let prezzoScontatoOver = prezzo - (40);
+    let prezzoScontatoOver = prezzo - (prezzo *0,4);
     document.getElementById("prezzo").innerHTML = "il costo del biglietto é, " + prezzoScontatoOver; 
 }
